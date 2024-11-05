@@ -1,0 +1,55 @@
+<style>
+    .contact {
+        font-size: small;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        background-color: #007bff;
+        height: 56px;
+        padding: 0 10px;
+    }
+
+    .col-1-of-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .col-1-of-4 b {
+        display: inline-block;
+        border-top: 3px solid rgba(255, 255, 255, 0.4);
+        padding-top: 3px;
+    }
+
+    .col-1-of-4 p {
+        margin: 0;
+    }
+
+    @media (max-width: 769px) {
+        .contact {
+            display: none; /* Hides the entire .contact section on smaller screens */
+        }
+    }
+</style>
+
+<div class="contact">
+    <div class="col-1-of-4">
+        <b>Muscat Head Office</b>
+        <p>Email: dawahi.survey@gmail.com</p>
+    </div>
+    <div class="col-1-of-4">
+        <b>Head of Operations</b>
+        <p>G.S.M : 00968-92640908</p>
+    </div>
+    <div class="col-1-of-4">
+        <b>Survey Department</b>
+        <p>G.S.M : 00968-93956010</p>
+    </div>
+    <div class="col-1-of-4">
+        <b>Design Department</b>
+        <p>G.S.M : 00968-77313786</p>
+    </div>
+</div>

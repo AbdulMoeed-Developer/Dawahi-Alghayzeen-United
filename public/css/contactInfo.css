@@ -1,0 +1,20 @@
+.header{
+    height: 40%;
+    width: 100%;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(/building6.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    margin-bottom: 50px;
+}
+
+.column-element{
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

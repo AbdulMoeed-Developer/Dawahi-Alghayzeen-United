@@ -1,0 +1,42 @@
+staffInfoBody{
+    margin: 10px;
+}
+.box {
+    border:3px solid aliceblue;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center; /* Centers text within each box */
+    transition: all 0.3s;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+}
+.box:hover{
+    color: #007bff;
+    border:3px solid #007bff;
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.user-image-1, .user-image-2, .user-image-3 , .user-image-4{
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 100%; /* Allows the image to be responsive */
+    max-width: 150px; /* Set a maximum width */
+    aspect-ratio: 1 / 1; /* Keeps the image square */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 8px;
+}
+.user-image-1{
+    background-image: url(/chairman2.png);
+}
+.user-image-2{
+    background-image: url(/ceo.png);
+}
+.user-image-3{
+    background-image: url(/staff/rizwan.jpeg);
+}
+.user-image-4{
+    background-image: url(/staff/ikram.jpg);
+}
