@@ -10,14 +10,7 @@ const ejsMate = require('ejs-mate');
 const sanitizeHtml = require('sanitize-html');
 const helmet = require('helmet');
 
-mongoose.connect('mongodb://localhost:27017/Website' )
-    .then(() => {
-        console.log("CONNECTION OPEN!!!")
-    })
-    .catch(err => {
-        console.log("OH NO ERROR!!!!")
-        console.log(err)
-    })
+
 
 app.engine('ejs' , ejsMate);
 // telling express that we want to use ejsMate instead of default one its relying on
