@@ -121,3 +121,31 @@ ol.gradient-list > li:nth-child(10n+10):before {
 ol.gradient-list > li + li {
   margin-top: 2rem;
 }
+.carousel-inner img {
+  height: 70vh; /* 70% of the viewport height */
+  object-fit: cover;
+  width: 100%;
+}
+
+.scrollable-list {
+  margin: 20px;
+  max-height: 600px; /* Set your preferred max height */
+  overflow-y: auto;
+  background-color: #f9f9f9; /* Optional, for contrast */
+  padding: 10px; /* Add padding so the shadow effect is fully visible */
+ border-right:3px solid #007bff;
+ border-left:3px solid #007bff;
+  /* Inner shadow effect */
+  box-shadow: inset 0px 10px 8px -8px rgba(0, 0, 0, 0.3), /* Top shadow */
+              inset 0px -10px 8px -8px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+}
+
+/* Optional: Adjust scrollbar style */
+.scrollable-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 4px;
+}

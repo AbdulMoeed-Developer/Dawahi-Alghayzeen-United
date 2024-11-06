@@ -68,6 +68,19 @@ app.use(
 
 app.use('/' , homeRoutes)
 
+// Other route handlers here
+// app.get('/some-route', (req, res) => { ... });
+
+// Catch-all route for handling 404 errors
+app.use((req, res, next) => {
+    res.status(404).render('error', { message: "Page Not Found" });
+});
+
+// Optional: Custom error handler for other errors
+app.use((err, req, res, next) => {
+    console.error(err.stack); // Log the error (optional)
+    res.status(err.status || 500).render('error', { message: "Something went wrong!" });
+});
 
 
 app.listen(3000 , ()=>{

@@ -1,7 +1,9 @@
 <% layout('layouts/boilerplate') %>
 <link rel="stylesheet" href="/css/projects.css">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha256-3sPp8BkKUE7QyPSl6VfBByBroQbKxKG7tsusY2mhbVY=" crossorigin="anonymous" /> -->
-<h1 class="display-4 text-center">Some of Our Major Projects</h1>
+<div class="text-center">
+<h1 class="display-4 text-center" style="border-bottom: 3px solid #007bff; display: inline;">Some of Our Major Projects</h1><br>
+<a href="#gallery" class="btn btn-outline-primary btn-sm mt-3">Have a look at our Project Gallery</a>
+</div>
 <main>
     <ol class="gradient-list">
         <li>Al Sharqiyah Expressway Section-2 Part-1 (IBRA - AL KAMIL)</li>
@@ -48,5 +50,19 @@
     <br>
     <p>For details download the PDF file <a href="/files/projects.pdf" download="All Projects" class="btn btn-outline-primary">All Projects</a></p>  
 </main>
-
+<h2 id="gallery" class="display-5 text-center mt-5">Project Gallery</h2>
+<div class="scrollable-list mb-5">
+    <% for (let i = 0; i < images.length; i += 2) { %>
+        <div class="row mb-5">
+            <% if (images[i]) { %>
+                <div class="col-1-of-2" style="border-radius: 10px; height: 300px; background-position: center; background-size: cover; background-image: url('/project-gallery/<%= images[i] %>');">
+                </div>
+            <% } %>
+            <% if (images[i + 1]) { %>
+                <div class="col-1-of-2" style="border-radius: 10px; height: 300px; background-position: center; background-size: cover; background-image: url('/project-gallery/<%= images[i + 1] %>');">
+                </div>
+            <% } %>
+        </div>
+    <% } %>    
+</div>
   

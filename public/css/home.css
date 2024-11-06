@@ -293,8 +293,8 @@
   overflow-y: auto;
   background-color: #f9f9f9; /* Optional, for contrast */
   padding: 10px; /* Add padding so the shadow effect is fully visible */
- /* border-top:1px solid #007bff;
- border-bottom:1px solid #007bff; */
+ border-right:3px solid #007bff;
+ border-left:3px solid #007bff;
   /* Inner shadow effect */
   box-shadow: inset 0px 10px 8px -8px rgba(0, 0, 0, 0.3), /* Top shadow */
               inset 0px -10px 8px -8px rgba(0, 0, 0, 0.3); /* Bottom shadow */
