@@ -51,7 +51,7 @@
   width: 100%; /* Full width */
   position: relative; /* To position the pseudo-element */
   padding-top: 56.25%; /* 16:9 Aspect Ratio (height / width * 100%) */
-  background-image: url('/chairman2.png');
+  background-image: url('/chairman.png');
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the image */
 }
@@ -425,10 +425,35 @@
 }
 
 /* ===== */
-
-.values{
+/* Default styling (before 425px) */
+.values {
   text-align: center;
+  visibility: visible;
+  display: block;
 }
+
+.values2 {
+  text-align: center;
+  visibility: hidden;
+  display: none;
+}
+
+/* After 425px */
+@media (max-width: 425px) {
+  .values {
+    visibility: hidden;
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .values2 {
+    visibility: visible;
+    display: block;
+  }
+}
+
+
+
 .value-01{
   background-image: url(https://images.pexels.com/photos/5302804/pexels-photo-5302804.jpeg);
   background-position: center;
@@ -462,6 +487,15 @@
   color: transparent;
 }
 
+.value-number{
+  font-size: 20rem;
+}
+@media (max-width: 760px) {
+  .value-number{
+    font-size: 15rem;
+  }
+}
+
 .animated-heading{
   font-size: 25px;
   font-weight: 50;
@@ -493,7 +527,9 @@
 @media (max-width: 425px) { /* 56.25em * 10 = 562.5px */
   .quote{
       height: 535px;
-      background-image: url(/building6.jpg);
+      background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/building6.jpg);
       background-position: center;
       background-attachment: fixed;
     }
