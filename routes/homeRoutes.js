@@ -71,5 +71,8 @@ router.get('/services' , (req, res)=>{
 router.get('/staffInfo' , (req , res)=>{
    res.render('./app/staffInfo.ejs')
 })
+router.get('/about' , (req,res)=>{
+   res.render('./app/about.ejs')
+})
 
 module.exports = router;

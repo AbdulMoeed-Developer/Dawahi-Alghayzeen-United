@@ -1,0 +1,23 @@
+.about{
+    padding: 25px;
+    margin-bottom: 35px;
+  }
+
+
+.styled-row {
+    height: auto;
+    background-color: #F0F8FF;
+    border-left: 15px solid #007bff;
+    border-right: 15px solid #007bff;
+  }
+  
+  
+  /* Media query for max-width of 800px */
+  @media (max-width: 800px) {
+    .styled-row {
+      border-left: 0px solid #007bff;
+      border-right: 0px solid #007bff;  
+      border-top: 15px solid #007bff;
+      border-bottom: 15px solid #007bff;  
+    }
+  }
