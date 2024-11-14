@@ -231,7 +231,7 @@
   padding: 1.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
   margin-bottom: 20px;
-  height: 12%;
+  height: 190px;
 }
 
 .client-card:hover {
