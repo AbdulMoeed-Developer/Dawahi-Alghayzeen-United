@@ -1,6 +1,21 @@
 <% layout('layouts/boilerplate') %>
 <link rel="stylesheet" href="/css/home.css">
-
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">🚀 Just Launched: A New Service for You!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer" style="height: 100px;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a class="btn btn-primary" href="/newService">Visit page</a>
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="header">
 <h1 class="heading-main">Complete Surveying & Engineering Solutions</h1>
 <div class="chairman-container-p">
@@ -114,28 +129,28 @@
               <div class="card__background" style="background-image: url(/survey2.jpg)"></div>
               <div class="card__content">
                 <h3 class="card__heading">Topographical Survey</h3>
-                <p class="card__category">We conduct surveys using advanced technology for precise site mapping.</p>
+                <p class="card__category fw-bold">We conduct surveys using advanced technology for precise site mapping.</p>
               </div>
             </a>
             <a class="card">
-              <div class="card__background" style="background-image: url(/as-built-survey.jpg)"></div>
+              <div class="card__background" style="background-image: url(/drone.jpg)"></div>
               <div class="card__content">
-                <h3 class="card__heading">Grid Surveying</h3>
-                <p class="card__category">We assist in determining site levels and contours for precise planning.</p>
+                <h3 class="card__heading">Drone Survey</h3>
+                <p class="card__category fw-bold">Professional aerial mapping and monitoring using drones for accurate, fast, and cost-effective data across various industries.</p>
               </div>
             </a>
             <a class="card">
               <div class="card__background" style="background-image: url(/survey.webp)"></div>
               <div class="card__content">
                 <h3 class="card__heading">Earth Works Survey & Volume Calculations</h3>
-                <p class="card__category">Surface modeling for accurate volume calculations in earthworks.</p>
+                <p class="card__category fw-bold">Surface modeling for accurate volume calculations in earthworks.</p>
               </div>
-            </li>
+            </a>
             <a class="card">
               <div class="card__background" style=" background-image: url(/calc.webp)"></div>
               <div class="card__content">
                 <h3 class="card__heading">CAD Services</h3>
-                <p class="card__category">Design data in AutoCAD, available in multiple formats.</p>
+                <p class="card__category fw-bold">Design data in AutoCAD, available in multiple formats.</p>
               </div>
             </a>
           <div>
@@ -416,70 +431,12 @@
 <div class="text-center">
     <a href="/projects" class="btn btn-outline-primary">OUR PROJECTS</a>
 </div>
+<% { %>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      modal.show();
+    });
+  </script>
+  <% } %>
     
-
-<!-- <section class="grid-test">
-    <div class="row">
-        <div class="col-1-of-2">
-            col 1 of 2
-        </div>
-        <div class="col-1-of-2">
-            Col 1 of 2
-        </div>
-     </div>
-
-    <div class="row">
-       <div class="col-1-of-3">
-           Col 1 of 3
-       </div>
-       <div class="col-1-of-3">
-           Col 1 of 3
-       </div>
-       <div class="col-1-of-3">
-           Col 1 of 3
-       </div>
-   </div>
-
-    <div class="row">
-       <div class="col-1-of-3">
-           Col 1 of 3
-       </div>
-       <div class="col-2-of-3">
-           Col 2 of 3
-       </div>
-    </div>
-
-    <div class="row">
-       <div class="col-1-of-4">
-           Col 1 of 4
-       </div>
-       <div class="col-1-of-4">
-           Col 1 of 4
-       </div>
-       <div class="col-1-of-4">
-           Col 1 of 4
-       </div>
-       <div class="col-1-of-4">
-           Col 1 of 4
-       </div>
-    </div>
-    <div class="row">
-       <div class="col-1-of-4">
-           Col 1 of 4
-       </div>
-       <div class="col-1-of-4">
-           Col 1 of 4
-       </div>
-       <div class="col-2-of-4">
-           Col 2 of 4
-       </div>
-    </div>
-    <div class="row">
-       <div class="col-1-of-4">
-           Col 1 of 4
-       </div>
-       <div class="col-3-of-4">
-           Col 3 of 4
-       </div>
-    </div>
-</section> -->

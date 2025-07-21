@@ -48,6 +48,16 @@ const images = [
    "image44.jpeg"
 ];
 
+const droneImages = [
+   "image1.jpg",
+   "image2.png",
+   "image3.jpg",
+   "image4.jpg",
+   "image5.jpg",
+   "image6.jpg",
+   "image7.jpg",
+   "image8.jpg",
+]
 
 
 router.get('/' , (req , res)=>{
@@ -73,6 +83,9 @@ router.get('/staffInfo' , (req , res)=>{
 })
 router.get('/about' , (req,res)=>{
    res.render('./app/about.ejs')
+})
+router.get('/newService' , (req,res)=>{
+   res.render('./app/newService.ejs', {droneImages})
 })
 
 module.exports = router;
