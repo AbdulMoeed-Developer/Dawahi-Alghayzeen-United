@@ -813,7 +813,24 @@
   }
 
 
+.modal-body {
+  background-image: url('/newService.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  width: 100%;
+  min-height: 650px;        /* Set a minimum height */
+  aspect-ratio: 16 / 9;     /* Makes it scale with screen */
+  padding: 0;               /* Remove default padding */
+  border-radius: 0.5rem;    /* Optional: rounded corners */
+}
+@media (max-width: 576px) {
+  .modal-body {
+    aspect-ratio: auto;
+    min-height: 500px;
+  }
+}
 
 
 
