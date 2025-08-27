@@ -2,23 +2,6 @@
 <link rel="stylesheet" href="/css/home.css">
 <link rel="preload" as="image" href="/newService.jpg" />
 <link rel="preload" as="image" href="/building.webp" />
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">🚀 Just Launched: A New Service for You!</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        </div>
-        <div class="modal-footer" style="height: 100px;">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a class="btn btn-primary" href="/newService">Visit page</a>
-        </div>
-      </div>
-    </div>
-  </div>
 <div class="header">
 <h1 class="heading-main">Complete Surveying & Engineering Solutions</h1>
 <div class="chairman-container-p">
@@ -434,12 +417,4 @@
 <div class="text-center">
     <a href="/projects" class="btn btn-outline-primary">OUR PROJECTS</a>
 </div>
-<% { %>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
-      modal.show();
-    });
-  </script>
-  <% } %>
     
